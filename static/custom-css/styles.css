@@ -508,11 +508,37 @@ img{
 /*FOOTER Rights*/
 
 .footer-rights{
-	height: 70px;
-	background: #0341A3;
+	height: 180px;
+	position: relative;
+	border: none !important;
+}
+
+.footer-rights .site-info {
+	color: #fff;
+	margin-top: 90px;
 }
 
 .nav-footer{
 	margin: 0 auto;
+}
 
+.custom-shape-divider-bottom-1607896176 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1607896176 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 159px;
+}
+
+.custom-shape-divider-bottom-1607896176 .shape-fill {
+    fill: #0341A3;
 }
