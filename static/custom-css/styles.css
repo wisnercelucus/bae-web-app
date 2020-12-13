@@ -1,0 +1,227 @@
+
+/* SITE COLORS 
+   PRIMARY: #0341A3;
+   ACCENT-BLUE: #2197F1;
+   ACCENT_YELLOW: #FDBF08;
+   RED: #FC2E07;
+   FIRST_BLUE-VAR: #3491B6;
+   SECOND-BLUE_NUANCED: #55B5D6;
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Allura|Josefin+Sans');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	outline: none;
+	list-style: none;
+	text-decoration: none;
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+.over-breadcrumb{
+	margin-top:45px;
+}
+
+.navbar{
+	background: #0341A3;
+	padding-right: 20px;
+	border-bottom: none !important;
+}
+
+.navbar-brand{
+	font-family: 'Allura', cursive;
+	font-size: 3.5rem !important;
+	font-weight: 600 !important;
+	color: yellow !important;
+}
+
+.nav li a{
+	color: #fff !important;
+	font-size: 2rem;
+}
+
+.dropdown-menu li a{
+    color: #000 !important;
+}
+
+.dropdown-menu > .active > a,
+.dropdown-menu > .active > a:hover,
+.dropdown-menu > .active > a:focus {
+  color: #fff !important;
+  text-decoration: none;
+  background-color: #428bca;
+  outline: 0;
+}
+
+.nav > .active > a,
+.nav > .active > a:hover,
+.nav > .active > a:focus {
+  color: #000 !important;
+  text-decoration: none;
+  background-color: #428bca;
+  outline: 0;
+}
+
+.nav-right{
+	float: right;
+}
+
+
+@media only screen and (max-width: 989px){
+	.navbar-brand,
+	.nav li a{
+		font-size: 1.5rem;
+	}
+}
+
+@media only screen and (max-width: 768px){
+.nav-right{
+	float: none;
+}
+
+.navbar-brand,
+.nav li a{
+	font-size: 1.8rem;
+}
+}
+
+/* BANNER SECTION */
+
+.banner-overlay{
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background-color: rgba(0, 0, 0, .7);
+
+}
+
+.banner{
+	position: relative;
+	margin-top: -22px;
+	height: 550px;
+	width: 100%;
+	background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.banner .burbble{
+	position: absolute;
+	top: 33%;
+	left: 10%;
+	/*background: rgba(255, 255, 0, 0.8);*/
+	background: #2197F1;
+	box-shadow: 3px 2px 1px 2px rgba(255, 255, 0, 0.1);
+	/*border-radius: 72% 10% 17% 51% / 65% 9% 17% 31%;*/
+	border-radius: 30% 81% 42% 39% / 32% 69% 43% 30%;
+	padding: 25px;
+	text-align: center;
+	color: yellow;
+	background-color: rgba(0, 13, 0, .3);
+
+}
+
+.banner .burbble h2{
+	font-size: 4.5rem;
+	font-family: 'Allura', cursive;
+	font-weight: 600;
+	color: #fff;
+}
+
+
+.banner .burbble p{
+	font-size: 2.5rem;
+	font-weight: 580;
+}
+
+.banner .brand-text{
+	position: absolute;
+	right: 10%;
+	top: 33%;
+	color: #fff;
+	text-align: center;
+}
+
+.banner .brand-text h2{
+	color: #fff;
+	font-size: 4.5rem;
+	font-family: 'Allura', cursive;
+	font-weight: 600;
+}
+
+.color-fuschia{
+	color: #2197F1;
+}
+
+.to-sale {
+	color:  #FC2E07;
+	font-size: 3.4rem;
+	font-family: 'Allura', cursive;
+	font-weight: 580;
+}
+
+.to-buy {
+	color: yellow;
+	font-size: 3.4rem;
+	font-family: 'Allura', cursive;
+	font-weight: 580;
+}
+
+@media only screen and (max-width: 1100px){
+
+.banner .burbble{
+
+	left: 5%;
+}
+	.banner .brand-text{
+	right: 5%;
+}
+}
+
+
+@media only screen and (max-width: 900px){
+
+	.banner .burbble{
+		top: 15%;
+		left:15%;
+		right: 15%;
+	}
+	
+	.banner .brand-text{
+		top: 53%;
+		left: 15%;
+		right: 15%;
+	}
+}
+
+.custom-shape-divider-bottom-1607812743 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1607812743 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 127px;
+}
+
+.custom-shape-divider-bottom-1607812743 .shape-fill {
+    fill: #FDBF08;
+}
+
+.btn-get-started{
+	position: absolute;
+	bottom: 8%;
+	left: 47%;
+	right: 50%;
+	outline: none !important;
+}
