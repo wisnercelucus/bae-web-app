@@ -542,3 +542,7 @@ img{
 .custom-shape-divider-bottom-1607896176 .shape-fill {
     fill: #0341A3;
 }
+
+.svg-img{
+	max-width: 50%;
+}
