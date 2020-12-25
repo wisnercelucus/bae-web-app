@@ -234,7 +234,8 @@ DATABASES = {
 # Full filesystem path to the project.
 PROJECT_APP_PATH = os.path.dirname(os.path.abspath(__file__))
 PROJECT_APP = os.path.basename(PROJECT_APP_PATH)
-PROJECT_ROOT = BASE_DIR = os.path.dirname(PROJECT_APP_PATH)
+PROJECT_ROOT = os.path.dirname(PROJECT_APP_PATH)
+BASE_DIR = os.path.dirname(PROJECT_APP_PATH)
 
 # Every cache key will get prefixed with this value - here we set it to
 # the name of the directory the project is in to try and use something
@@ -244,6 +245,12 @@ CACHE_MIDDLEWARE_KEY_PREFIX = PROJECT_APP
 # URL prefix for static files.
 # Example: "http://media.lawrence.com/static/"
 STATIC_URL = "/static/"
+
+#STATICFILES_DIRS = [
+#    os.path.join(BASE_DIR, "static"),  # dev only after collecting static schemas
+#]
+
+#STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles/')
 
 # Absolute path to the directory static files should be collected to.
 # Don't put anything in this directory yourself; store your static files
@@ -322,6 +329,7 @@ INSTALLED_APPS = (
     "mezzanine.galleries",
     "mezzanine.twitter",
     "mezzanine.accounts",
+    "storages",
 )
 
 
