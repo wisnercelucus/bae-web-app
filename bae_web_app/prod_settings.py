@@ -1,6 +1,6 @@
 from .settings import *
 import dj_database_url
-import django_heroku
+#import django_heroku
 
 DEBUG = False
 TEMPLATE_DEBUG = False
@@ -16,6 +16,7 @@ ALLOWED_HOSTS = ['bae-app.herokuapp.com']
 STATICFILES_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
 
 
+
 #config = locals()
 #django_heroku.settings(config, databases=False, staticfiles=False)
 
@@ -29,6 +30,8 @@ STATICFILES_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
 #	ssl_require=True
 #	)
 #}
+
+DATABASES['default'] = dj_database_url.config()
 
 #Celery settings
 #CELERY_BROKER_URL = 'redis://h:p51ade22e411702848e6a865d44b71d789f5cdc4f316102305d831792055e89a1@ec2-34-202-225-162.compute-1.amazonaws.com:26359'
